@@ -33,8 +33,11 @@ I am imagining the incremental load would be most useful for GA4, so that is the
 Ideally, I would want to skip records that have not changed in the timeframe, and append the records that are new. 
 
 *merge key:*  I would use a unique pkey using something like gen_random_uuid() as event_id--- this should be unique and not null and immutable
+
 *watermark:* timestamp of the last upload 
+
 *late-data policy:* Hold until next refresh  
+
 *intraday-file policy:* It can get quite expensive to run jobs multiple times a day, so unless it is deemed critical to have intraday live data, I would advise having the full data refresh to occur once a day. The front end users would then have data up to date from the last complete day. 
 
 **Questions for Upstream Owners**
