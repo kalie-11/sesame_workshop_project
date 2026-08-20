@@ -17,8 +17,11 @@ This is a classic problem when dealing with web events. If a user happens to log
 
 **Refused/Deferred**
 -I refused or deferred building much of the GA tables including modeling out each event_name and each event_param. I only defined these terms as relevant to the task. In the future, it would be likely helpful to dive into page_location information to fct_ga_events and to add login information to the fct_donation table. I also did not use the intraday model which would be helpful to track event progression over the course of the previous day. 
+
 -I also did not dive deeply into contacts.csv and only utilized it briefly as a source of information for the fundraising team regarding mismatched donations. This could be cleaned up to remove deleted records. 
+
 -I did not touch donation amount in donations.csv, which could be modeled to show lifetime value, avg donation, and time series models.
+
 - I did not examine household ratings which could be tracked over time and network.
 
 **Incremental loading**
