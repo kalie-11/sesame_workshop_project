@@ -23,10 +23,12 @@ This is a classic problem when dealing with web events. If a user happens to log
 
 -I did not touch donation amount in donations.csv, which could be modeled to show lifetime value, avg donation, and time series models.
 
-- I did not examine household ratings which could be tracked over time and network.
+-I did not examine household ratings which could be tracked over time and network.
+
 
 **Incremental loading**
 
 **AI Use**
+
 I did not use AI in this project.
   
