@@ -15,7 +15,7 @@ raw_events = duckdb.sql("""
                         user_pseudo_id,
                         unnest(event_params, recursive:=true) as event_params
                         FROM read_json_auto('events/*.jsonl',
-                        auto_detect = TRUE, union_by_name = TRUE) as events
+                        auto_detect = TRUE, union_by_name = TRUE) as events ---in the real world, this would be an incremental model. I only am loading everything on every run because it is a closed system. 
                             
                             """)
 
