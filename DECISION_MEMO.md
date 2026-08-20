@@ -26,6 +26,8 @@ This is a classic problem when dealing with web events. If a user happens to log
 
 -I did not examine household ratings which could be tracked over time and network.
 
+-I did not include testing in this model. In the actual model I would add tests to ensure the data is clean and running properly. 
+
 
 **Incremental loading**
 if this ran hourly: 
