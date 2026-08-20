@@ -1,0 +1,7 @@
+2a. To determine the number of web transactions existed in the last 14 days, I only wanted to see donations that contained a web donation. For this section, I removed the donations that existed in Salesforce, but not as a web donation. Additionally, I had to consider the fact that the Salesforce csv contained a wider pool of dates, which would skew the attribution rate if it were not narrowed to the same date range as the web's 14 days. I included null Salesforce donation dates as well so it would keep rows where there was only a web and not a Salesforce record. 
+
+2b. Memo: 
+I provided a table with information regarding the records that existed only in web transactions or only in Salesforce. The goal here is for the fundraising team to be able to identify the individuals without a Salesforce record and update the CRM accordingly. For the individuals without a web donation record, perhaps the donation team needs to confirm that the donation was actually completed, or they need to indicate in the CRM that the donation was obtained in a different method than web (e.g. check or over the phone).
+
+2c. Memo:
+For any donations outside of the campaign window, I not attribute those donations to a campaign, unless if a donor specifically requests the donation to be attributed to the campaign window.  

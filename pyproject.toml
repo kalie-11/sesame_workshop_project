@@ -1,0 +1,6 @@
+[project]
+name = "sesame_workshop_project"
+description = "This project is designed to model GA, SF, and TV data for Sesame Workshop"
+version = "0.1.0"
+requires-python = ">=3.14"
+dependencies = ["duckdb>=1.5.5"]
