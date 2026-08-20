@@ -161,7 +161,7 @@ transactions_dont_match_info = duckdb.sql("""
                         salesforce_transaction_id,
                         campaign_name,
                         donated_at_date,
-                        coalesce(email,user_pseudo_id) as identifier
+                        email as identifier ---from salesforce. if the team finds this information helpful, in the future, I can see if the web transactions logged in and left their contact info
                     FROM fct_donations
                         WHERE (donated_at_date between '2026-07-01' and '2026-07-14' or donated_at_date is NULL)
                         AND (web_transaction_id is NULL or salesforce_transaction_id is NULL)""")
