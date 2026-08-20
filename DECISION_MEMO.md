@@ -16,6 +16,7 @@
 This is a classic problem when dealing with web events. If a user happens to log in to watch a video, their session and user_psuedo_id becomes attached to their contact_id. Because it is an extra step that is presumably not required to watch Sesame Street, it is unlikely I can say definitively that a donor watched a video before donating. I would refuse to claim x% of video watchers donate after or x% of donors watched a video beforehand. I would be able to provide is a list of individuals who signed in before watching and their donation information afterwards. 
 
 **Refused/Deferred**
+
 -I refused or deferred building much of the GA tables including modeling out each event_name and each event_param. I only defined these terms as relevant to the task. In the future, it would be likely helpful to dive into page_location information to fct_ga_events and to add login information to the fct_donation table. I also did not use the intraday model which would be helpful to track event progression over the course of the previous day. 
 
 -I also did not dive deeply into contacts.csv and only utilized it briefly as a source of information for the fundraising team regarding mismatched donations. This could be cleaned up to remove deleted records. 
